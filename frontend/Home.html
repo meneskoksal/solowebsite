@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML Project</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+    </header>
+    <div class="panel-container-column">
+        <div class="panel-container-row">
+            <section class="panel" style="display: flex;flex-direction: column;">
+                <h2>PI</h2>
+                <p>What do you want to know from <a href="pi.html" class="page-link">PI</a> ?</p>
+
+                <label for="piInput">Enter a numerical value:</label>
+
+                <input id="piInput" type="text" placeholder="TEST NUMBER">
+
+                <button id="piButton">Press</button>
+
+                <p id="piResult"></p>
+            </section>
+            <a href="pi.html"
+                onclick="changePage(event, this, 'fade-out')">
+                    Fade
+            </a>
+
+            <a href="pi.html"
+                onclick="changePage(event, this, 'slide-left')">
+                    Slide
+            </a>
+
+            <a href="pi.html"
+                onclick="changePage(event,this, 'zoom-in')">
+                    Zoom
+             </a>
+        </div>
+    </div>
+
+    <div class="panel-container-row">
+            <section class="panel">
+                <h2>Mini Game</h2>
+                <p> You know me. How ?</p>
+                <button>Find Out</button>
+            </section>
+    </div>
+
+
+
+
+    <footer>
+        <p></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
