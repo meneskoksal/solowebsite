@@ -1,3 +1,10 @@
+const today = new Date();
+
+document.getElementById("current-date").textContent =
+    today.toLocaleDateString();
+
+
+
 function changePage(event, link, effect) {
     event.preventDefault();
 
